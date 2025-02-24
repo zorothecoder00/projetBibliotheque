@@ -47,12 +47,12 @@ p
 }
  p:hover 
 {
-    transform: translateX(-100px);
-    opacity: 0.5;
+    
+    opacity: 0.2;
 }
 
 h1:hover 
 {
-    transform: translateX(100px);
-    opacity: 0.5;
+    
+    opacity: 0.2;
 }
