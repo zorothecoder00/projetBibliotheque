@@ -84,10 +84,10 @@ $resultat = $stmt->get_result();
             <?php while ($row = $resultat->fetch_assoc()): ?>
                 <li>
                     <strong><?php echo htmlspecialchars($row['titre']); ?></strong> 
-                    par <?php echo htmlspecialchars($row['auteur']); ?>
+                    par <?php echo htmlspecialchars($row['auteur']); ?><br>
                     
                     <!-- Lien vers les détails du livre -->
-                    <a href="details.php?id=<?php echo $row['id']; ?>">Voir les détails</a>
+                    <a href="details.php?id=<?php echo $row['id']; ?>">Voir les détails</a><br>
                     
                     <!-- Formulaire pour retirer un livre de la liste -->
                     <form method="POST" action="" style="display:inline;">

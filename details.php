@@ -13,7 +13,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
         $stmt->bind_param('i', $id_livre);
         $stmt->execute();
         $resultat = $stmt->get_result();
-
+  
         // Vérifier si un livre a été trouvé
         if ($resultat->num_rows > 0) {
             $livre = $resultat->fetch_assoc();
@@ -35,7 +35,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
                 <!-- Le formulaire pour ajouter à la liste de lecture -->
                 <form method="POST" action="wishlist.php">
                     <input type="hidden" name="id_livre" value="<?php echo $id_livre; ?>">
-                    <button type="submit">Ajouter à la liste de lecture</button>
+                    <button type="submit" style="margin-bottom: 20px;">Ajouter à la liste de lecture</button>
                 </form>
 
                 <a href="index.php"><button>Retour à la bibliothèque</button></a>

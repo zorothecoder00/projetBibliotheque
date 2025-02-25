@@ -39,7 +39,7 @@ h1, p {
 
 h1
 {
-   transition: transform 1s ease opacity 1s ease;
+   transition: transform 1s ease opacity 1s ease; 
 }
 p
 {
@@ -56,3 +56,24 @@ h1:hover
     
     opacity: 0.5;
 }
+
+.delete
+{
+	background-color: lightgray;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px 5px;
+    cursor: pointer;
+
+}
+
+/* Changement de couleur lors du survol */
+  .delete:hover {
+    background-color: green; /* Nouvelle couleur au survol */
+  }
+
+ input 
+ {
+ 	border-radius: 5px;
+ }
