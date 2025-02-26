@@ -1,7 +1,46 @@
 <?php
 
+echo "<style>
+    body {
+        background-image: url('livre1.webp'); /* Remplace 'background.jpg' par le chemin de ton image */
+        background-size: cover; /* Couvre toute la page */
+        background-position: center; /* Centre l'image */
+        background-repeat: no-repeat; /* Évite la répétition */
+        font-family: Arial, sans-serif; /* Police d'écriture */
+        color: white; /* Texte en blanc pour bien contraster */
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    h2 {
+        margin-top: 20px;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+    li {
+        background: rgba(0, 0, 0, 0.7); /* Fond semi-transparent pour améliorer la lisibilité */
+        padding: 15px;
+        margin: 10px auto;
+        width: 60%;
+        border-radius: 10px;
+    }
+    button {
+        background-color: #ffcc00;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+    button:hover {
+        background-color: #ffaa00;
+    }
+</style>";
+
 session_start();
-include 'connexion.php'; //Inclut la connexion à la base de donnée
+include 'connexion.php'; //Inclut la connexion à la base de donnée   
 
 // Vérifier si l'utilisateur est connecté
 if (!isset($_SESSION['id'])) {
